@@ -14,15 +14,16 @@
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: #08806c;
-    h1{
+
+    h1 {
         color: #fdbb5c;
     }
 }
 
-.cont-header img{
+.cont-header img {
     display: flex;
     size: 100%;
-    height: 15vh;
+    height: 12vh;
     overflow: hidden;
 }
 
@@ -31,21 +32,51 @@
     gap: 0.5rem 0.5rem;
     padding: 5px 8px;
     margin: 5px;
-    a{
+
+    a {
         color: #fdbb5c;
     }
 }
 
 /* BODY */
-.cont-general{
+.cont-general {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.cont-tienda{
+.cont-tienda {
     background-color: #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+
+    /* TODO: REVISAR una vez que 
+    esten agregadas las imagenes */
+    gap: 50px;
 }
 
-.cont-carrito{
+.producto-card {
+    padding: 10px;
+}
+
+.producto-img {
+    display: flex;
+    size: 100%;
+    height: 25vh;
+    overflow: hidden;
+}
+
+.cont-carrito {
     background-color: #ccc;
+}
+
+/* CLASES JS */
+
+.sin-stock {
+    p {
+        color: red;
+        text-decoration: line-through;
+    }
 }
