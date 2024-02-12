@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lora', serif;
+    font-family: 'Noto Serif', serif;
 }
 
+/* HEADER */
 .cont-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: #08806c;
     h1{
         color: #fdbb5c;
@@ -25,9 +28,24 @@
 
 .cont-botones {
     display: grid;
-
-    background-color: cadetblue;
     gap: 0.5rem 0.5rem;
     padding: 5px 8px;
     margin: 5px;
+    a{
+        color: #fdbb5c;
+    }
+}
+
+/* BODY */
+.cont-general{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.cont-tienda{
+    background-color: #f0f0f0;
+}
+
+.cont-carrito{
+    background-color: #ccc;
 }
