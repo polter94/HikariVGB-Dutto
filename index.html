@@ -16,24 +16,25 @@
 <body>
     <header class="header">
         <div class="cont-header">
-            <img src="./img/1.png" alt="logo del negocio">
+            <a href="#"><img src="./img/1.png" alt="logo del negocio"></a>
             <h1>Hikari Diseños</h1>
 
             <div class="cont-botones">
-                <a href="#" class="popup">Nosotros</a>
-                <a href="#" class="popup">Redes Sociales</a>
+                <button id="btnNosotros" class="btnNav nosotros">Nosotros</button>
+                <button id="btnRedes" class="btnNav redesSociales">Redes Sociales</button>
+                <button id="btnCarrito" class="btnNav expandir" onclick="colapsar()">Abrir carrito</button>
             </div>
         </div>
     </header>
 
 
-    <div class="cont-general">
+    <div id="contenedorColapsable" class="cont-general-cerrado">
 
-        <div class="cont-tienda" id="listaProd"></div>
         <!-- lista de productos rellenado por JS -->
+        <div class="cont-tienda" id="listaProd"></div>
 
-        <div id="carrito"></div>
         <!-- carrito rellenado por JS -->
+        <div id="carrito" class="carrito-cerrado"></div>
 
     </div>
 

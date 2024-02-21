@@ -33,6 +33,25 @@ let contCarrito = document.getElementById("carrito");
 contCarrito.append(carrito);
 
 
+//FUNCION para abrir y cerrar CARRITO desde BOTON
+const paginaColapsable = document.querySelector("#contenedorColapsable");
+const botonColapsar = document.querySelector("#btnCarrito")
+
+function colapsar() {
+    if (article.className == "cont-general-abierto") {
+        //cerrar
+        article.className = "cont-general-cerrado";
+        botonColapsar.innerHTML = "Abrir carrito";
+    } else {
+        //cerrar
+        article.className = "cont-general-abierto";
+        botonColapsar.innerHTML = "Cerrar carrito";
+    }
+}
+
+
+
+
 //  FUNCION para cambiar ${precio} por 'sin stock'
 // TODO
 
